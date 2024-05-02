@@ -36,6 +36,14 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.c \
+FreeRTOS-Kernel/croutine.c \
+FreeRTOS-Kernel/event_groups.c \
+FreeRTOS-Kernel/list.c \
+FreeRTOS-Kernel/queue.c \
+FreeRTOS-Kernel/stream_buffer.c \
+FreeRTOS-Kernel/tasks.c \
+FreeRTOS-Kernel/timers.c \
 Core/Src/main.c \
 Core/Src/stm32f4xx_it.c \
 Core/Src/stm32f4xx_hal_msp.c \
@@ -120,7 +128,9 @@ C_INCLUDES =  \
 -IDrivers/STM32F4xx_HAL_Driver/Inc \
 -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32F4xx/Include \
--IDrivers/CMSIS/Include
+-IDrivers/CMSIS/Include \
+-IFreeRTOS-Kernel/include \
+-IFreeRTOS-Kernel/portable/GCC/ARM_CM4F \
 
 
 # compile gcc flags
