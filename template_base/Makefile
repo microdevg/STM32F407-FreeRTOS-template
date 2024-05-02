@@ -36,6 +36,7 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+FreeRTOS-Kernel/portable/MemMang/heap_1.c \
 FreeRTOS-Kernel/portable/GCC/ARM_CM4F/port.c \
 FreeRTOS-Kernel/croutine.c \
 FreeRTOS-Kernel/event_groups.c \
